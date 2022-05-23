@@ -354,7 +354,7 @@ IedModel_getModelNodeByShortObjectReference(IedModel* model, const char* objectR
 
     *separator = 0;
 
-    char ldName[65];
+    char ldName[130];
     strcpy(ldName, model->name);
     strcat(ldName, objRef);
 
