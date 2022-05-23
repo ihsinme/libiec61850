@@ -116,7 +116,7 @@ ConfigFileParser_createModelFromConfigFile(FileHandle fileHandle)
 
         currentLine++;
 
-        if (bytesRead > 0) {
+        if ((bytesRead > 0) && (strlen((char*) lineBuffer) > 0)) {
             lineBuffer[bytesRead] = 0;
 
             if (stateInModel) {
